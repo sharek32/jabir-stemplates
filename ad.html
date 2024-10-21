@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jabir's Web Templates</title>
+    <link rel="stylesheet" href="styles.css">
+    <style> 
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #282c36;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: linear-gradient(90deg, #2980B9, #6C63FF);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .logo h1 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FF6584;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #6C63FF, #FF6584);
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h2 {
+    font-size: 64px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    background: #FF5068;
+    color: #fff;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background 0.4s ease, transform 0.3s;
+}
+
+.cta-button:hover {
+    background: #FF3451;
+    transform: translateY(-5px);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Templates Section */
+.templates-section {
+    padding: 100px 5%;
+    background: #1ABC9C;
+    color: #fff;
+    text-align: center;
+}
+
+.templates-section h3 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.template-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #34495E;
+    border: 1px solid #444;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.card span {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #F1C40F; /* Ensure it's a visible yellow/golden color */
+    margin: 10px 0; /* Added margin to ensure spacing */
+}
+
+.buy-button {
+    background: #2ECC71;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.buy-button:hover {
+    background: #27AE60;
+    transform: translateY(-3px);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 100px 5%;
+    background: linear-gradient(135deg, #FF6584, #6C63FF);
+    color: #fff;
+    text-align: center;
+}
+
+.portfolio-section h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.portfolio-button {
+    background: #FF5068;
+    color: #fff;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.portfolio-button:hover {
+    background: #FF3451;
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    background: #34495E;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #F1C40F;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FF6584;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Jabir's Templates</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#templates">Templates</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Welcome to My Template Store</h2>
+        <p>High-quality, responsive web templates for just $2!</p>
+        <a href="#templates" class="cta-button">Explore Templates</a>
+    </section>
+
+    <!-- Templates Section -->
+    <section id="templates" class="templates-section">
+        <h3>Our Templates</h3>
+        <div class="template-cards">
+            <div class="card">
+                <img src="https://i.imghippo.com/files/hdiwS1729498553.png" alt="Animated Template">
+                <h4>Animated Website Template</h4>
+                <p>This dynamic template features smooth animations, modern UI.Want to know more about my responsive, animated, and beautifully designed web templates? Drop me a message on Instagram at <a href="https://www.instagram.com/md.jabir32/">@md.jabir32!</a> I'll provide all the details, including customization options, use cases, and buying.</p>
+                <span>$2</span>
+            </div>
+            <div class="card">
+                <img src="https://i.imghippo.com/files/CyV5U1729498463.png" alt="RGB Template">
+                <h4>RGB Portfolio Template</h4>
+                <p>This sleek RGB-themed template is designed for portfolios with clean sections, beautiful animations, and responsive layout.Want to know more about my responsive, animated, and beautifully designed web templates? Drop me a message on Instagram at <a href="https://www.instagram.com/md.jabir32/">@md.jabir32!</a> I'll provide all the details, including customization options, use cases, and buying.</p>
+                <span>$2</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <h3>See My Works and Certificates</h3>
+        <p>Check out the projects I've completed and my certifications.</p>
+        <a href="https://sharek32.github.io/mdsharek-s-portfolio/" class="portfolio-button">Visit Portfolio</a>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>Contact me on Instagram: <a href="https://www.instagram.com/md.jabir32/">@md.jabir32</a></p>
+        <p>&copy; 2024 Jabir's Templates</p>
+    </footer>
+</body>
+</html>
